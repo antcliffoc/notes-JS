@@ -16,4 +16,10 @@ var assert = {
       throw new Error("Assertion failed: " + object + " does not include " + expectation);
     } else { console.log("Assertion passed: " + object + " includes " + expectation)}
   },
+
+  arrDoesNotInclude: function(object, expectation) {
+    if (object.includes(expectation)) {
+      throw new Error("Assertion failed: " + object + " does include " + expectation);
+    } else { console.log("Assertion passed: " + object + " does not include " + expectation)}
+  }
 };

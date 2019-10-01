@@ -9,14 +9,25 @@
     <script src="src/Note-model.js"></script>
     <script src="src/Note-list-model.js"></script>
     <script src="src/note-list-view.js"></script>
+    <script src="note-controller.js"></script>
 
     <!-- test code -->
     <script src="spec/Note-model-spec.js"></script>
     <script src="spec/Note-list-model-spec.js"></script>
     <script src="spec/note-list-view-spec.js"></script>
+    <script src="spec/note-controller-spec.js"></script>
 
   </head>
   <body>
-
+    <div id="app"> </div>
+    <script>
+    function testInnerHTML() {
+      noteController = new NoteController(new NoteList())
+      noteController.addNote("booze")
+      noteController.createView()
+      assert.equals(document.getElementById("app").innerHTML, "<ul><li>booze</li></ul>")
+    }
+    testInnerHTML();
+    </script>
   </body>
 </html>

@@ -1,9 +1,7 @@
 (function(exports) {
-  function setGreeter(text){
-    console.log("hi");
+  function setList(notelist){
     var elem = document.getElementById("app");
-    elem.innerHTML = text;
+    elem.innerHTML = NoteListView(notelist)
   }
-  setGreeter("howdy");
-  exports.setGreeter = setGreeter
+  exports.setList = setList;
 })(this)

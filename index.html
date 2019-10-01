@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="note-controller.js"></script>
-    <script src="src/Note-list-model.js"></script>
-    <script src="src/note-list-view.js"></script>
-    <script src="src/Note-model.js"></script>
   </head>
   <body>
     <div id="app">Hello</div>
-    <script src="note-controller.js">
-    setGreeter("howdy");
+    <script src="src/Note-model.js"></script>
+    <script src="src/Note-list-model.js"></script>
+    <script src="src/note-list-view.js"></script>
+    <script src="note-controller.js"></script>
+    <script>
+      var notelist = new NoteList();
+      notelist.newNote("Favourite Drink: Booze")
+      setList(notelist);
     </script>
   </body>
 </html>

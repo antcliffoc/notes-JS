@@ -1,0 +1,22 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antcliffoc/notes-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antcliffoc/notes-JS/issues"
+  },
+  "homepage": "https://github.com/antcliffoc/notes-JS#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

@@ -1,9 +1,9 @@
 (function(exports){
   function Note(text) {
-    this.text = text
+    this.content = text
   };
   Note.prototype.text = function() {
-    return this.text
+    return this.content
   };
  exports.Note = Note;
 })(this);

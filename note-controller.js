@@ -1,7 +1,13 @@
 (function(exports) {
-  function setList(notelist){
-    var elem = document.getElementById("app");
-    elem.innerHTML = NoteListView(notelist)
+  function NoteController(notelist){
+    this.nl = notelist;
   }
-  exports.setList = setList;
+  NoteController.prototype.addNote = function(text) {
+    this.nl.newNote(text);
+  }
+  NoteController.prototype.createView = function() {
+    var elem = document.getElementById("app");
+    elem.innerHTML = NoteListView(this.nl)
+  }
+  exports.NoteController = NoteController;
 })(this)

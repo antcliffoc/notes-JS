@@ -11,9 +11,9 @@
     <script src="src/note-list-view.js"></script>
     <script src="note-controller.js"></script>
     <script>
-      var notelist = new NoteList();
-      notelist.newNote("Favourite Drink: Booze")
-      setList(notelist);
+      var noteController = new NoteController(new NoteList());
+      noteController.addNote("Favourite Drink: Booze")
+      noteController.createView();
     </script>
   </body>
 </html>
